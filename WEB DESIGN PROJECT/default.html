@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Spider-Man | HOME</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box}
+body {
+  margin: 0;
+  font-family:Times News Roman;
+  background-color:red;
+  color:white;
+  font-size: 20px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: red;
+
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: white;
+  color: red;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: red;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1100px;
+  max-height:400px;
+  position: relative;
+  margin: 0px 500px 100px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color:blue;
+  background-color: turquoise;
+  opacity:0.8;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/7 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  
+  
+}
+
+.active, .dot:hover {
+  background-color: green;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0.4;} 
+  to {opacity: 1;}
+}
+
+@keyframes fade {
+  from {opacity: 0.4;} 
+  to {opacity: 1;}
+}
+
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    margin:90px;
+    padding:15px;
+    color: red;
+    background-color: white;
+    clear: left;
+    text-align: center;
+}
+
+
+
+th {
+	background-color:lightgreen;
+	color:blue;
+	font-family:arial;
+	font-size:20px;
+	text-align:center;
+}
+
+td {
+	background-color:yellow;
+	color:black;
+	font-family:arial;
+	font-size:15px;
+	text-align:left;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .prev, .next, .text {font-size: 11px;}
+}
+
+@media screen and (max-width: 600px){
+    img {width:100%;float:none;margin-left:auto;margin-right:auto;}
+    iframe {width:100%;height:300px;margin-left:auto;margin-right:auto;}
+	table {width:100%;height:auto;margin-left:auto;margin-right:auto;}
+	table th,td {font-size:2.5vw;}
+	form {width:100%;height:auto;margin-left;auto;margin-right:auto;font-size:2.5vw;}
+	form legend {font-size:2.5vw;}
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="default.html" class="active">Home</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 7</div>
+  <img src="spidey.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 7</div>
+  <img src="spidey2.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 7</div>
+  <img src="spidey3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+   <div class="numbertext">4 / 7</div>
+   <img src="spidey4.jpg" style="width:100%">
+   <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">5 / 7</div>
+    <img src="spidey5.jpg" style="width:100%">
+    <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+   <div class="numbertext">6 / 7</div>
+   <img src="spidey6.jpg" style="width:100%">
+   <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+   <div class="numbertext">7 / 7</div>
+   <img src="spidey7.jpg" style="width:100%">
+   <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+</div>
+
+<div class="container">
+<header>
+   <h1>Spider-Man| HOME.</h1>
+</header>
+<article>
+  <h1>Spider-Man | HOME.</h1>
+   <p>Spider-Man | HOME.</p>
+   
+   <img src="peterparker2.jpg" width="25%" style="float:right;margin:5px;">
+  
+<p>Ultimate Spider-Man is a superhero comic book series that was published by Marvel Comics from 2000 to 2011. The series is a modernized re-imagining of Marvel's long-running Spider-Man comic book franchise as part of the company's Ultimate Marvel imprint.[1] Ultimate Spider-Man exists alongside other revamped Marvel characters in Ultimate Marvel titles including Ultimate X-Men, Ultimate Fantastic Four and The Ultimates.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/s_85l8sBlPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img src="peterparker.jpg" width="25%" style="float:left;margin:5px;"> 
+  
+<p>Orphaned at the age of six, Peter Parker is an outcast and withdrawn teenaged science prodigy, who lives in Queens, New York. While attending a field trip to a scientific corporation, he is bitten by a genetically-modified spider and as a result, begins to develop spider-like superpowers, including enhanced strength, speed, agility, stamina, durability and reflexes, along with the ability to crawl solid surfaces and a sixth sense, which warns him of imminent danger, all of which he decides to utilize for personal gain.</p>
+  
+<p>When an armed thief, whom Peter had encountered earlier and refused to stop out of spite, later murders his foster father/uncle in a robbery, a guilt-ridden Peter is later driven to use his abilities to atone for his partial responsibility in his uncle's murder, as the costumed vigilante Spider-Man.</p>
+<p>Now equipped with a responsibility to do good and help others under his Spider-Man alter-ego, Peter struggles to balance high school life and studies, his job as a web designer for the Daily Bugle, his relationship with his girlfriend Mary-Jane Watson, his family life with his widowed aunt, and his double life as Spider-Man, as he faces off against both superhuman and criminal threats to his home of New York City and contends with the hostility of the general public and the police authorities.</p>
+
+
+ 
+
+<p></p>
+<footer>Copyright &copy; Mustafa Alpar</footer>
+
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
